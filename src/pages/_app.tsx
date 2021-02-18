@@ -13,6 +13,7 @@ function App({ Component, pageProps }: AppProps) {
           name="description"
           content="React test for education wiser with, typescript, react, nextjs, hooks, redux, etc"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

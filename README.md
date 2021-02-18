@@ -1,6 +1,5 @@
 <h2 align="center">
-  Wiser Educação
-	<!-- <img alt="Bikcraft" src="./screenshot.png" width="500px" /> -->
+	<img alt="Bikcraft" src="./wiser.png" width="150px" alt="Wiser Educação"/>
 </h2>
 
 <p align="center">
@@ -13,3 +12,6 @@
 </p>
 
 ## :rocket: Getting Started
+
+- [ ] Node
+- [ ] Yarn
