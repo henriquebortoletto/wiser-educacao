@@ -7,11 +7,11 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>React Avançado</title>
+        <title>React - Wiser Educação</title>
         <link rel="shortcut icon" href="/img/favicon.ico" />
         <meta
           name="description"
-          content="react test for education wiser with, typescript, react, nextjs, hooks, redux, etc"
+          content="React test for education wiser with, typescript, react, nextjs, hooks, redux, etc"
         />
       </Head>
       <GlobalStyles />
