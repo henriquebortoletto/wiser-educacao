@@ -5,9 +5,10 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start": "next start -p $PORT",
 		"test": "jest",
-		"test:watch": "yarn test --watch"
+		"test:watch": "yarn test --watch",
+		"heroku-postbuild": "npm run build"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
