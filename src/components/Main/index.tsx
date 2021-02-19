@@ -29,12 +29,10 @@ const validate = (values: any) => {
 };
 
 const Main = function () {
-	const [validAuth, setValidAuth] = useState(null);
+	const [validAuth, setValidAuth] = useState(false);
 
 	const req = async (value: any) => {
 		try {
-			setValidAuth(false);
-
 			const response = await api
 				.get("/wiser")
 				.then((response) => response.data);
