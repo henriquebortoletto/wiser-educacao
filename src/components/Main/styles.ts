@@ -54,5 +54,16 @@ export const wrapperMessage = styled.div`
 	margin-bottom: 30px;
 `;
 export const error = styled.div`
-	color: red;
+	color: #df2935;
+`;
+export const errorAuth = styled.div`
+	margin-bottom: 30px;
+	text-align: center;
+	color: #df2935;
+`;
+
+export const successAuth = styled.div`
+	margin-bottom: 30px;
+	text-align: center;
+	color: #7bae7f;
 `;
