@@ -1,40 +1,25 @@
 import * as S from "./styles";
 
-const Main = () => (
-  <S.Wrapper>
-    <S.Background>
-      <S.BackgroundOverlay />
-    </S.Background>
-    <S.FormWrapper>
-      <S.Title>
-        Olá, seja
-        <br /> bem vindo!
-      </S.Title>
-      <S.Description>
-        Para acessar a plataforma,
-        <br /> faça seu login.
-      </S.Description>
-      <S.FormGroup>
-        <S.Label>E-mail</S.Label>
-        <S.Input placeholder="user.name@mail.com" />
-      </S.FormGroup>
-      <S.FormGroup>
-        <S.Label>Senha</S.Label>
-        <S.Input placeholder="*******" />
-      </S.FormGroup>
-      <S.Button
-        onClick={() => {
-          console.log("clicando");
-        }}
-      >
-        Entrar
-      </S.Button>
-      <S.ResetPassword>
-        Esqueceu seu login ou senha? <br />
-        Clique <a href="#">aqui</a>
-      </S.ResetPassword>
-    </S.FormWrapper>
-  </S.Wrapper>
-);
+import Background from "components/Background";
+import Header from "components/Header";
+import GroupInput from "components/Input";
+import Button from "components/Button";
 
-export default Main;
+export default function Main() {
+  return (
+    <S.Wrapper>
+      <Background />
+      <S.FormWrapper>
+        <S.formContainer>
+          <Header />
+          <GroupInput />
+          <Button />
+          <S.ResetPassword>
+            Esqueceu seu login ou senha? <br />
+            Clique <a href="#">aqui</a>
+          </S.ResetPassword>
+        </S.formContainer>
+      </S.FormWrapper>
+    </S.Wrapper>
+  );
+}

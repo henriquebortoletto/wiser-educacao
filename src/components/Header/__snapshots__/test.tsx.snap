@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render the heading 1`] = `
+<h1
+  class="styles__Title-u7lf7e-0 kqbgSV"
+>
+  Olá, seja
+  <br />
+   bem vindo!
+</h1>
+`;

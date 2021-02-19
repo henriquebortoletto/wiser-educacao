@@ -1,14 +1,12 @@
 import { render, screen } from "@testing-library/react";
 
-import Main from ".";
+import GroupInput from ".";
 
-describe("<Main />", () => {
+describe("<GroupInput />", () => {
   it("should render the heading", () => {
-    const { container } = render(<Main />);
+    const { container } = render(<GroupInput />);
     expect(
-      screen.getByRole("heading", {
-        name: /Esqueceu seu login ou senha? Clique aqui/i,
-      })
+      screen.getByRole("heading", { name: /Olá, seja bem vindo!/i })
     ).toBeInTheDocument();
     expect(container.firstChild).toMatchSnapshot();
   });
