@@ -1,16 +1,17 @@
 import * as S from "./styles";
 
-export default function Header() {
-  return (
-    <>
-      <S.Title>
-        Olá, seja
-        <br /> bem vindo!
-      </S.Title>
-      <S.Description>
-        Para acessar a plataforma,
-        <br /> faça seu login.
-      </S.Description>
-    </>
-  );
+interface HeaderProps {
+	title: string;
+	description: string;
 }
+
+const Header: React.FC<HeaderProps> = function ({ title, description }) {
+	return (
+		<>
+			<S.Title>{title}</S.Title>
+			<S.Description>{description}</S.Description>
+		</>
+	);
+};
+
+export default Header;

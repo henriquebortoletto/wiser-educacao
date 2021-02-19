@@ -1,16 +1,27 @@
 import * as S from "./styles";
 
-export default function GroupInput() {
-  return (
-    <>
-      <S.FormGroup>
-        <S.Label>E-mail</S.Label>
-        <S.Input placeholder="user.name@mail.com" />
-      </S.FormGroup>
-      <S.FormGroup>
-        <S.Label>Senha</S.Label>
-        <S.Input placeholder="*******" />
-      </S.FormGroup>
-    </>
-  );
+interface InputProps {
+	label: string;
+	placeholder: string;
+	id: string;
+	name: string;
+	type: string;
+	value: string;
 }
+
+const GroupInput: React.FC<InputProps> = function ({
+	label,
+	placeholder,
+	...rest
+}) {
+	return (
+		<>
+			<S.FormGroup>
+				<S.Label>{label}</S.Label>
+				<S.Input placeholder={placeholder} {...rest} />
+			</S.FormGroup>
+		</>
+	);
+};
+
+export default GroupInput;

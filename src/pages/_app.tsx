@@ -8,7 +8,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>React - Wiser Educação</title>
-        <link rel="shortcut icon" href="/img/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           name="description"
           content="React test for education wiser with, typescript, react, nextjs, hooks, redux, etc"
