@@ -43,7 +43,7 @@ const Main = function () {
 				}
 			});
 		} catch (error) {
-			alert("Erro no cadastro, tente novamente.");
+			alert("Erro ao tentar autenticar, tente novamente.");
 		}
 	};
 
