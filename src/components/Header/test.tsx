@@ -1,18 +1,19 @@
 import { render, screen } from "@testing-library/react";
 
-import Header from ".";
+import Header from "./index";
 
 describe("<Header />", () => {
-  it("should render the heading", () => {
-    const { container } = render(<Header />);
-    expect(
-      screen.getByRole("heading", { name: /Olá, seja bem vindo!/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", {
-        name: /Para acessar a plataforma, faça seu login./i,
-      })
-    ).toBeInTheDocument();
-    expect(container.firstChild).toMatchSnapshot();
-  });
+	it("should render the title", () => {
+		const { getByText, container } = render(
+			<Header
+				title="Olá, seja bem vindo!"
+				description="Para acessar a plataforma, faça seu login."
+			/>
+		);
+		expect(getByText("Olá, seja bem vindo!")).toBeVisible();
+		expect(
+			getByText("Para acessar a plataforma, faça seu login.")
+		).toBeVisible();
+		expect(container.firstChild).toMatchSnapshot();
+	});
 });

@@ -1,11 +1,10 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
-import Button from ".";
+import Button from "./index";
 
 describe("<Button />", () => {
-  it("should render text", () => {
-    const { container } = render(<Button />);
-    expect(screen.getByRole("heading", { name: /Entrar/i })).toBeInTheDocument();
-    expect(container.firstChild).toMatchSnapshot();
-  });
+	it("should render text", () => {
+		const { container } = render(<Button type="submit" label="entrar" />);
+		expect(container.firstChild).toMatchSnapshot();
+	});
 });

@@ -53,7 +53,7 @@ const Main = function () {
 			password: "",
 		},
 		validate,
-		onSubmit: (values) => req(values),
+		onSubmit: (values: any) => req(values),
 	});
 
 	return (

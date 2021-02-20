@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render text 1`] = `
+<button
+  class="styles__Button-sc-11qq8g6-0 bMHdRd"
+  type="submit"
+>
+  entrar
+</button>
+`;

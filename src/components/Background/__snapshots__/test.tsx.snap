@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Background /> should render the background image correct 1`] = `
+<section
+  class="styles__Background-sc-1qgc544-0 jnnmli"
+>
+  <div
+    class="styles__BackgroundOverlay-sc-1qgc544-1 gvMmtm"
+  />
+</section>
+`;

@@ -61,7 +61,6 @@ export const errorAuth = styled.div`
 	text-align: center;
 	color: #df2935;
 `;
-
 export const successAuth = styled.div`
 	margin-bottom: 30px;
 	text-align: center;
