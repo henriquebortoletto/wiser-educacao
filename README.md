@@ -45,11 +45,11 @@ Quando o projeto startar a aplicação ficará disponível em http://localhost:3
 
 Redux não foi aplicado no teste, conhecimento insuficiente para aplicar no teste pelo prazo determinado. Depois de validado será adicionado para fins de término.
 
-- [ x ] React
+- [x] React
 - [ ] Redux
 - [ ] Redux Saga
-- [ x ] NextJS
-- [ x ] Styled Components
+- [x] NextJS
+- [x] Styled Components
 - [ x ] Axios
 
 ## :rocket: Produção
