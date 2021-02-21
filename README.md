@@ -50,7 +50,7 @@ Redux não foi aplicado no teste, conhecimento insuficiente para aplicar no test
 - [ ] Redux Saga
 - [x] NextJS
 - [x] Styled Components
-- [ x ] Axios
+- [x] Axios
 
 ## :rocket: Produção
 
