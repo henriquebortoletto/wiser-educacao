@@ -60,44 +60,48 @@ const Main = function () {
 		<S.Wrapper>
 			<Background />
 			<S.FormWrapper>
-				<S.formContainer>
-					<Header
-						title="Olá, seja bem vindo!"
-						description="Para acessar a plataforma, faça seu login."
-					/>
+				<S.FormContainer>
 					<form onSubmit={formik.handleSubmit}>
-						<S.wrapperMessage>
-							<GroupInput
-								label="E-mail"
-								placeholder="user.name@mail.com"
-								id="email"
-								name="email"
-								type="email"
-								onChange={formik.handleChange}
-								value={formik.values.email}
+						<S.ContainerResponsive>
+							<Header
+								title="Olá, seja bem vindo!"
+								description="Para acessar a plataforma, faça seu login."
 							/>
-							{formik.errors.email ? (
-								<S.error>{formik.errors.email}</S.error>
-							) : null}
-						</S.wrapperMessage>
-						<S.wrapperMessage>
-							<GroupInput
-								label="Senha"
-								placeholder="*******"
-								id="password"
-								name="password"
-								type="password"
-								onChange={formik.handleChange}
-								value={formik.values.password}
-							/>
-							{formik.errors.password ? (
-								<S.error>{formik.errors.password}</S.error>
-							) : null}
-						</S.wrapperMessage>
+							<S.WrapperMessage>
+								<GroupInput
+									label="E-mail"
+									placeholder="user.name@mail.com"
+									id="email"
+									name="email"
+									type="email"
+									onChange={formik.handleChange}
+									value={formik.values.email}
+								/>
+								{formik.errors.email ? (
+									<S.Error>{formik.errors.email}</S.Error>
+								) : null}
+							</S.WrapperMessage>
+							<S.WrapperMessage>
+								<GroupInput
+									label="Senha"
+									placeholder="*******"
+									id="password"
+									name="password"
+									type="password"
+									onChange={formik.handleChange}
+									value={formik.values.password}
+								/>
+								{formik.errors.password ? (
+									<S.Error>{formik.errors.password}</S.Error>
+								) : null}
+							</S.WrapperMessage>
 
-						{validAuth && (
-							<S.successAuth>Seu login foi efetuado com sucesso!</S.successAuth>
-						)}
+							{validAuth && (
+								<S.SuccessAuth>
+									Seu login foi efetuado com sucesso!
+								</S.SuccessAuth>
+							)}
+						</S.ContainerResponsive>
 
 						<Button type="submit" label="entrar" />
 					</form>
@@ -105,7 +109,7 @@ const Main = function () {
 						Esqueceu seu login ou senha? <br />
 						Clique <a href="#">aqui</a>
 					</S.ResetPassword>
-				</S.formContainer>
+				</S.FormContainer>
 			</S.FormWrapper>
 		</S.Wrapper>
 	);

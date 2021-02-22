@@ -27,4 +27,7 @@ export const Input = styled.input`
 	:focus {
 		border-color: #9d25b0;
 	}
+	@media (max-width: 650px) {
+		width: 100%;
+	}
 `;

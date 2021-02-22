@@ -14,4 +14,11 @@ export const Button = styled.button`
 	cursor: pointer;
 	outline: 0;
 	box-shadow: 0px 10px 25px #cf99db;
+	@media (max-width: 650px) {
+		width: 168px;
+		position: relative;
+		top: calc(-48px / 2);
+		left: calc(50% - 84px);
+		box-shadow: none;
+	}
 `;

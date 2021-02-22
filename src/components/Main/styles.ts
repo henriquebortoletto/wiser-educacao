@@ -22,24 +22,30 @@ export const FormWrapper = styled.section`
 		grid-column: auto;
 	}
 `;
-export const formContainer = styled.div`
+export const FormContainer = styled.div`
 	max-width: 256px;
 	height: 100%;
 	margin-left: 110px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	border-radius: 8px;
 
 	@media (max-width: 992px) {
 		margin-left: 40px;
 	}
 	@media (max-width: 650px) {
 		height: auto;
-		max-width: 335px;
-		background: #faf5ff;
-		padding: 4rem;
+		max-width: 311px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+`;
+export const ContainerResponsive = styled.div`
+	background: #faf5ff;
+	@media (max-width: 650px) {
+		padding: 28px 28px 50px;
+		border-radius: 8px;
 	}
 `;
 export const ResetPassword = styled.p`
@@ -49,19 +55,27 @@ export const ResetPassword = styled.p`
 	line-height: 20px;
 	color: #989fdb;
 	margin-top: 30px;
+	@media (max-width: 650px) {
+		font-weight: 400;
+		color: #fff;
+		margin-top: 24px;
+		a {
+			color: #fff;
+		}
+	}
 `;
-export const wrapperMessage = styled.div`
+export const WrapperMessage = styled.div`
 	margin-bottom: 30px;
 `;
-export const error = styled.div`
+export const Error = styled.div`
 	color: #df2935;
 `;
-export const errorAuth = styled.div`
+export const ErrorAuth = styled.div`
 	margin-bottom: 30px;
 	text-align: center;
 	color: #df2935;
 `;
-export const successAuth = styled.div`
+export const SuccessAuth = styled.div`
 	margin-bottom: 30px;
 	text-align: center;
 	color: #7bae7f;
